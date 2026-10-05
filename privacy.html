@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>[APP_NAME] - 隱私權政策 | Privacy Policy</title>
-  <meta name="description" content="[APP_NAME] 隱私權政策。[APP_NAME] Privacy Policy.">
+  <title>n8n AI Program - 隱私權政策 | Privacy Policy</title>
+  <meta name="description" content="n8n AI Program 隱私權政策。n8n AI Program Privacy Policy.">
   <style>
     :root {
       --bg: #f8fafc;
@@ -70,7 +70,7 @@
 <body>
   <header>
     <div class="nav">
-      <a class="brand" href="index.html">[APP_NAME]</a>
+      <a class="brand" href="index.html">n8n AI Program</a>
       <nav>
         <a class="link" href="index.html">首頁 Home</a>
         <a class="link" href="privacy.html">隱私權政策 Privacy Policy</a>
@@ -85,12 +85,12 @@
     <section>
       <h2>1. 簡介 Introduction</h2>
       <p>
-        本隱私權政策說明 [DEVELOPER_NAME]（以下稱「我們」）所開發之 [APP_NAME]（以下稱「本應用程式」）
+        本隱私權政策說明 SOCOOL（以下稱「我們」）所開發之 n8n AI Program（以下稱「本應用程式」）
         如何收集、使用、儲存、分享及保護您的資訊，包含透過 Google API 取得的 Google 使用者資料。
         使用本應用程式即表示您同意本政策的內容。
       </p>
       <p class="en">
-        This Privacy Policy explains how [APP_NAME] (the "App"), developed by [DEVELOPER_NAME] ("we", "us"),
+        This Privacy Policy explains how n8n AI Program (the "App"), developed by SOCOOL ("we", "us"),
         collects, uses, stores, shares, and protects your information, including Google user data obtained
         through Google APIs. By using the App, you agree to this policy.
       </p>
@@ -101,12 +101,18 @@
       <p>當您使用 Google 帳戶登入並授權後，本應用程式可能存取以下資料：</p>
       <ul>
         <li><strong>基本個人資料：</strong>您的 Google 帳戶名稱、電子郵件地址與大頭貼（<code>openid</code>、<code>email</code>、<code>profile</code>）。</li>
-        <li><strong>[其他 Google 資料]：</strong>[例如：Google 日曆活動的標題與時間（<code>calendar.readonly</code>）。請依實際申請的權限範圍修改。]</li>
+        <li><strong>Gmail：</strong>郵件內容、主旨、寄件者與標籤，用於讀取、整理及寄送郵件（<code>gmail.modify</code>）。</li>
+        <li><strong>Google 日曆：</strong>日曆活動的標題、時間、地點與參與者，用於讀取、建立及更新活動（<code>calendar</code>）。</li>
+        <li><strong>Google 雲端硬碟：</strong>僅限本應用程式建立或您選擇開啟的檔案（<code>drive.file</code>）。</li>
+        <li><strong>Google 試算表：</strong>流程所使用之試算表的內容（<code>spreadsheets</code>）。</li>
       </ul>
       <p class="en">After you sign in with Google and grant permission, the App may access:</p>
       <ul class="en">
         <li><strong>Basic profile information:</strong> your Google Account name, email address, and profile picture (<code>openid</code>, <code>email</code>, <code>profile</code>).</li>
-        <li><strong>[Other Google data]:</strong> [e.g. titles and times of your Google Calendar events (<code>calendar.readonly</code>). Update to match the scopes you request.]</li>
+        <li><strong>Gmail:</strong> email content, subjects, senders and labels, used to read, organize and send emails (<code>gmail.modify</code>).</li>
+        <li><strong>Google Calendar:</strong> event titles, times, locations and attendees, used to read, create and update events (<code>calendar</code>).</li>
+        <li><strong>Google Drive:</strong> only files created by the App or that you choose to open with it (<code>drive.file</code>).</li>
+        <li><strong>Google Sheets:</strong> contents of the spreadsheets used by your workflows (<code>spreadsheets</code>).</li>
       </ul>
       <p>我們不會存取超出上述範圍的資料，且您可隨時拒絕授權。</p>
       <p class="en">We do not access data beyond the scopes listed above, and you may decline authorization at any time.</p>
@@ -138,7 +144,7 @@
         包含「有限使用（Limited Use）」規定。
       </p>
       <p class="en">
-        [APP_NAME]'s use and transfer to any other app of information received from Google APIs will adhere to the
+        n8n AI Program's use and transfer to any other app of information received from Google APIs will adhere to the
         <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>,
         including the Limited Use requirements.
       </p>
@@ -167,19 +173,29 @@
         We do not sell, rent, or trade your personal data. Data may be disclosed only: with your explicit consent;
         when required by law, court order, or government authorities; or to protect the rights and safety of the App and its users.
       </p>
+      <p>
+        若您建立的流程包含 AI 處理步驟，相關內容會在執行時傳送給該流程所設定的 AI 模型服務供應商進行處理，
+        僅用於產生該次流程結果，不會用於其他用途。
+      </p>
+      <p class="en">
+        If a workflow you build includes an AI processing step, the relevant content is sent to the AI model provider
+        configured in that workflow at run time, solely to produce that workflow's result and for no other purpose.
+      </p>
     </section>
 
     <section>
       <h2>6. 資料儲存與保護 Data Storage &amp; Security</h2>
       <p>
-        [請擇一修改：本應用程式不會將您的 Google 使用者資料儲存於伺服器，資料僅在您使用期間暫時處理。／
-        資料儲存於 [儲存位置，例如 Google Cloud]，並以 HTTPS/TLS 加密傳輸、存取權限控管等措施保護。]
-        存取權杖（Access Token）僅用於代表您呼叫 Google API，並以安全方式保存。
+        Google 使用者資料僅在流程執行期間處理，不會另外建立資料庫長期保存。
+        OAuth 存取權杖（Access Token）與更新權杖（Refresh Token）以加密方式儲存在 n8n 的憑證儲存區中，
+        僅用於代表您呼叫 Google API。流程執行紀錄僅保留供除錯所需的有限期間，之後即自動刪除。
+        所有資料傳輸皆透過 HTTPS/TLS 加密，並以存取權限控管保護。
       </p>
       <p class="en">
-        [Choose one: The App does not store your Google user data on its servers; data is processed only temporarily during your session. /
-        Data is stored in [location, e.g. Google Cloud] and protected by HTTPS/TLS encryption in transit and access controls.]
-        Access tokens are used only to call Google APIs on your behalf and are stored securely.
+        Google user data is processed only while a workflow runs and is not kept in a separate long-term database.
+        OAuth access and refresh tokens are stored encrypted in n8n's credential store and are used only to call Google APIs on your behalf.
+        Workflow execution logs are kept only for a limited period for debugging and are then deleted automatically.
+        All data is transmitted over HTTPS/TLS and protected by access controls.
       </p>
     </section>
 
@@ -188,12 +204,12 @@
       <p>我們僅在提供服務所需期間保留您的資料。您可以隨時透過以下方式移除授權或刪除資料：</p>
       <ul>
         <li>前往 <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google 帳戶「第三方應用程式與服務」</a> 撤銷本應用程式的存取權。</li>
-        <li>來信 <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a> 要求刪除資料，我們將於 30 天內完成處理。</li>
+        <li>來信 <a href="mailto:socool.huang@gmail.com">socool.huang@gmail.com</a> 要求刪除資料，我們將於 30 天內完成處理。</li>
       </ul>
       <p class="en">We retain your data only as long as needed to provide the service. You can revoke access or delete your data at any time by:</p>
       <ul class="en">
         <li>Revoking the App's access at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account &gt; Third-party apps &amp; services</a>.</li>
-        <li>Emailing <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a> to request deletion; we will complete the request within 30 days.</li>
+        <li>Emailing <a href="mailto:socool.huang@gmail.com">socool.huang@gmail.com</a> to request deletion; we will complete the request within 30 days.</li>
       </ul>
     </section>
 
@@ -214,8 +230,8 @@
       <p>若您對本隱私權政策有任何疑問，請聯絡：</p>
       <p class="en">If you have any questions about this Privacy Policy, please contact:</p>
       <p>
-        [DEVELOPER_NAME]<br>
-        Email：<a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a>
+        SOCOOL<br>
+        Email：<a href="mailto:socool.huang@gmail.com">socool.huang@gmail.com</a>
       </p>
     </section>
   </main>
@@ -225,7 +241,7 @@
       <a href="index.html">首頁 Home</a> |
       <a href="privacy.html">隱私權政策 Privacy Policy</a>
     </div>
-    <p>&copy; 2026 [DEVELOPER_NAME]. All rights reserved.</p>
+    <p>&copy; 2026 SOCOOL. All rights reserved.</p>
   </footer>
 </body>
 </html>
