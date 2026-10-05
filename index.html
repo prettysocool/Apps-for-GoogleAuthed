@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[APP_NAME] - 首頁 | Home</title>
+  <meta name="description" content="[APP_NAME] 應用程式首頁。[APP_NAME] application homepage.">
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --primary: #1a73e8;
+      --border: #e2e8f0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", "Microsoft JhengHei", -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .brand { font-weight: 700; font-size: 1.25rem; color: var(--text); text-decoration: none; }
+    .nav a.link { color: var(--primary); text-decoration: none; margin-left: 16px; }
+    .hero {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 64px 16px 32px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 2.25rem; margin: 0 0 12px; }
+    .hero p { color: var(--muted); font-size: 1.1rem; margin: 4px 0; }
+    main { max-width: 960px; margin: 0 auto; padding: 0 16px 48px; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    section h2 { margin-top: 0; font-size: 1.35rem; }
+    .en { color: var(--muted); font-size: 0.95rem; }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .feature {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+    }
+    .feature h3 { margin: 0 0 8px; font-size: 1.05rem; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    th { background: #f1f5f9; }
+    code { background: #f1f5f9; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; word-break: break-all; }
+    footer {
+      text-align: center;
+      padding: 24px 16px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: var(--card);
+    }
+    footer a { color: var(--primary); text-decoration: none; margin: 0 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <a class="brand" href="index.html">[APP_NAME]</a>
+      <nav>
+        <a class="link" href="index.html">首頁 Home</a>
+        <a class="link" href="privacy.html">隱私權政策 Privacy Policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <h1>[APP_NAME]</h1>
+    <p>[一句話描述應用程式的用途，例如：協助您整理 Gmail 與 Google 日曆資訊的個人生產力工具。]</p>
+    <p class="en">[One-sentence description of the app, e.g. A personal productivity tool that helps you organize your Gmail and Google Calendar.]</p>
+  </div>
+
+  <main>
+    <section>
+      <h2>關於本應用程式 About</h2>
+      <p>
+        [APP_NAME] 是由 [DEVELOPER_NAME] 開發的應用程式。使用者可透過 Google 帳戶登入，
+        在取得使用者明確授權後，本應用程式會存取必要的 Google 使用者資料，以提供下列功能。
+        本應用程式僅將資料用於提供使用者看得到的功能，不會出售或用於廣告用途。
+      </p>
+      <p class="en">
+        [APP_NAME] is an application developed by [DEVELOPER_NAME]. Users sign in with their Google Account.
+        With the user's explicit consent, the app accesses only the Google user data required to provide the
+        features described below. Data is used solely to provide user-facing features and is never sold or used for advertising.
+      </p>
+    </section>
+
+    <section>
+      <h2>主要功能 Features</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Google 帳戶登入<br><span class="en">Sign in with Google</span></h3>
+          <p>使用 Google 帳戶安全登入，無需另外建立帳號密碼。</p>
+          <p class="en">Securely sign in with your Google Account without creating a separate password.</p>
+        </div>
+        <div class="feature">
+          <h3>[功能二]<br><span class="en">[Feature 2]</span></h3>
+          <p>[說明此功能做什麼，以及需要哪些 Google 資料。]</p>
+          <p class="en">[Describe what this feature does and which Google data it uses.]</p>
+        </div>
+        <div class="feature">
+          <h3>[功能三]<br><span class="en">[Feature 3]</span></h3>
+          <p>[說明此功能做什麼，以及需要哪些 Google 資料。]</p>
+          <p class="en">[Describe what this feature does and which Google data it uses.]</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>我們要求的 Google 權限 Google Permissions We Request</h2>
+      <p>本應用程式僅要求提供上述功能所必需的最少權限：</p>
+      <p class="en">The app requests only the minimum permissions needed to provide the features above:</p>
+      <table>
+        <thead>
+          <tr><th>權限範圍 Scope</th><th>用途 Purpose</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>openid</code>, <code>email</code>, <code>profile</code></td>
+            <td>識別您的身分並顯示您的名稱與頭像。<br><span class="en">Identify you and display your name and profile picture.</span></td>
+          </tr>
+          <tr>
+            <td><code>[https://www.googleapis.com/auth/...]</code></td>
+            <td>[說明此權限的用途]<br><span class="en">[Explain why this scope is needed]</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>詳細的資料使用方式請參閱我們的 <a href="privacy.html">隱私權政策</a>。</p>
+      <p class="en">For details on how we handle your data, please read our <a href="privacy.html">Privacy Policy</a>.</p>
+    </section>
+
+    <section>
+      <h2>聯絡我們 Contact</h2>
+      <p>如有任何問題，請來信：<a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a></p>
+      <p class="en">For any questions, please contact: <a href="mailto:[CONTACT_EMAIL]">[CONTACT_EMAIL]</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <a href="index.html">首頁 Home</a> |
+      <a href="privacy.html">隱私權政策 Privacy Policy</a>
+    </div>
+    <p>&copy; 2026 [DEVELOPER_NAME]. All rights reserved.</p>
+  </footer>
+</body>
+</html>
